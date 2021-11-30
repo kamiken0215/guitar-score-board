@@ -31,20 +31,6 @@ public class ScoreAccessCountsController {
     @Autowired
     private ScoreAccessCountsService scoreAccessCountsService;
 
-//    @GetMapping("/scores/popular/month/{param}")
-//    public List<ScoresModel> findAll(@PathVariable(value = "param") String param) {
-//        if (!(param.equals("asc") || param.equals("desc"))) {
-//            return new ArrayList<>();
-//        }
-//        boolean isAsc = param.equals("asc");
-//        List<ScoreAccessCounts> scoreAccessCountsList = scoreAccessCountsService.find(isAsc);
-//        List<Scores> scoresList = new ArrayList<>();
-//        for (ScoreAccessCounts s : scoreAccessCountsList) {
-//            scoresList.add(s.getScores());
-//        }
-//        return createScoreModelList(scoresList);
-//    }
-
     private List<ScoresModel> createScoreModelList(List<Scores> scoresList) {
 
         List<ScoresModel> scoresModelList = new ArrayList<>();
